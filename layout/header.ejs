@@ -1,5 +1,58 @@
-<div class="py-32 bg-light">
-  <div class="container ">
-    <p class="">header</p>
-  </div>
+<div class="position-fixed w-100 z-3">
+  <div class="navbar-border position-absolute bg-white start-0 end-0 bottom-0"></div>
+  <nav class="navbar navbar-expand-lg py-12 py-md-20 bg-primary" data-bs-theme="dark">
+    <div class="container d-flex justify-content-between">
+      <!-- LOGO -->
+      <h1 class="lh-0"><a class="d-block ff-shrikhand fs-24 fs-md-32 text-white font-italic p-0" href="index.html">ALPHABOX+</a></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined fs-44 fs-md-32 fw-bold text-white">menu</span>
+      </button>
+      <!-- 下拉選單 -->
+      <div class="navbar-dropdown position-md-static position-absolute start-0 end-0 flex-lg-grow-1">
+        <div class="collapse navbar-collapse navbar-bg" id="navContent">
+          <ul class="navbar-nav mx-lg-auto me-auto mb-8 mb-lg-0 gap-8 pt-16 pt-lg-0 gap-lg-16">
+            <li class="nav-item">
+              <a class="nav-link text-white text-center" aria-current="page" href="#">產品</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center" href="#">關於我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center" href="#">最新消息</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center" href="#">聯絡我們</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav gap-8 pb-32 pb-lg-0 gap-lg-16">
+            <li class="nav-item">
+              <a class="nav-link text-white text-center" href="#">註冊</a>
+            </li>
+            <li class="nav-item me-lg-16">
+              <a class="nav-link text-white text-center" href="#">登入</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link btn rounded-1 text-black text-center bg-white py-8 px-12" href="#">
+                <i class="material-symbols-outlined align-bottom me-1">point_scan</i>
+                訂閱
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <!-- 漢堡按鈕 -->
+      <!-- <button class="navbar-toggler border-0 d-flex d-lg-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="icon-custom">
+          <span class="icon-line"></span>
+          <span class="icon-line"></span>
+          <span class="icon-line"></span>
+        </div>
+      </button> -->
+    </div>
+  </nav>
 </div>

@@ -1,0 +1,12 @@
+.container-main{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  @include media-breakpoint-up(lg){
+    max-width: 1760px;
+  }
+}
+

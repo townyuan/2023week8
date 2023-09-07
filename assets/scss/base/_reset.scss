@@ -1,8 +1,6 @@
-
-
 body,
 html {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: $font-family-sans-serif;
 }
 
 ul, ol{
@@ -13,4 +11,5 @@ ul, ol{
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }

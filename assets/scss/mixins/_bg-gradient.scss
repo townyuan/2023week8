@@ -8,9 +8,7 @@
   background-image: linear-gradient(to bottom, $start-color, $end-color);
 }
 
-@mixin radial-gradient(
-  $start-color: $primary,
-  $end-color: $secondary,
-) {
-  background-image: radial-gradient(50% 50% at 50% 50%, $start-color 0%, $end-color 100%);
+@mixin gradient-radial($inner-color: $primary-5, $outer-color: $secondary) {
+  background-image: radial-gradient(circle, $inner-color, $outer-color);
 }
+

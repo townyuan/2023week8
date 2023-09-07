@@ -1,0 +1,54 @@
+.card{
+  border: none;
+
+  &-gallery{
+    display: block;
+    padding: 24px 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    // background-image: url('/assets/images/diane_vertical.png');
+    background-size: cover;
+    background-position: center;
+    @include media-breakpoint-up(lg){
+      padding: 24px 40px 56px;
+      background-color: #000;
+      transition: all 1s;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+  }
+
+  &:nth-child(1){
+    border-right: 1px solid #fff;
+  }
+  &:nth-child(3){
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+  }
+  &:nth-child(4){
+    border-top: 1px solid #fff;
+  }
+
+  @include media-breakpoint-up(lg){
+
+    &:nth-child(1),&:nth-child(2),&:nth-child(3){
+      border: none;
+      border-right: 1px solid #fff;
+    }
+    &:nth-child(4){
+      border: none;
+    }
+  }
+  
+  &-arrow{
+    width: 151px;
+    height: 14px;
+    @include media-breakpoint-up(md){
+      width: 155px;
+      height: 24px;
+    }
+  }
+}

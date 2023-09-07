@@ -1,0 +1,32 @@
+.navbar-bg {
+  @include gradient-y($primary, $secondary);
+  @media (min-width: 992px) {
+    background-image: none;
+  }
+}
+
+.navbar-border {
+  z-index: 5;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.0256);
+  height: 1px;
+  top: 76px;
+  @include media-breakpoint-up(md) {
+    top: 80px;
+  }
+}
+
+.navbar {
+  &-dropdown {
+    top: 76px;
+    @include media-breakpoint-up(lg){
+      position: static !important;
+    }
+  }
+  .navbar-toggler {
+    border: 0px;
+    &:focus {
+      box-shadow: none;
+      border: 0px;
+    }
+  }
+}

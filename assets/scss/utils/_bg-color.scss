@@ -1,0 +1,19 @@
+.bg-gradient-x2r{
+  @include gradient-x($primary, $secondary);
+}
+.bg-gradient-x2l{
+  @include gradient-x($secondary, $primary);
+}
+.bg-gradient-y{
+  @include gradient-y($primary, $secondary);
+}
+.bg-gradient-c{
+  @include gradient-radial($primary-5, $secondary);
+}
+
+.nav-bg{
+  background-color: $primary;
+  @include media-breakpoint-down(sm) {
+    @include gradient-y($primary, $secondary);
+  }
+}

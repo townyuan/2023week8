@@ -1,16 +1,33 @@
 
 
 @import "../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables"; // include cusotm
+@import "./helpers/variables";
 @import "../../node_modules/bootstrap/scss/variables-dark";
+
+// @import "./utils/custom-color";
+@import "./mixins/bg-gradient";
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-
 // Add additional custom code here
+@import "./helpers/utilities";
+@import "./utils/bg-color";
 @import "./base/reset";
 @import "./base/font";
-@import "./helpers/utilities";
-@import "./utils/custom-color";
+@import "./utils/text";
+@import "./utils/swiper";
+@import "./utils/animation";
+@import "./utils/card";
+@import "./utils/border-utilities";
 
-// @import "./mixins/_bg-gradient";
+
+@import "./layout/container";
+@import "./layout/nav";
+
+@import "./pages/index";
+
+
+@import "./base/test";
+
+
+

@@ -1,0 +1,84 @@
+@include media-breakpoint-up(md) {
+  .fs-md-400{
+    font-size: 400px !important;
+  }
+  .fs-md-96{
+    font-size: 64px !important;
+  }
+  .fs-md-64{
+    font-size: 64px !important;
+  }
+  .fs-md-48{
+    font-size: 48px !important;
+  }
+  .fs-md-32{
+    font-size: 32px !important;
+  }
+  .fs-md-24{
+    font-size: 24px !important;
+  }
+  .fs-md-22{
+    font-size: 22px !important;
+  }
+  .fs-md-18{
+    font-size: 18px !important;
+  }
+  .fs-md-16{
+    font-size: 16px !important;
+  }
+  .fs-md-14{
+    font-size: 14px !important;
+  }
+}
+
+
+.letter-spacing-48{
+  letter-spacing: 48px;
+}
+.letter-spacing-40{
+  letter-spacing: 40px;
+}
+.letter-spacing-24{
+  letter-spacing: 24px;
+}
+.letter-spacing-26{
+  letter-spacing: 26px;
+}
+.letter-spacing-20{
+  letter-spacing: 20px;
+}
+.letter-spacing-16{
+  letter-spacing: 16px;
+}
+.letter-spacing-5{
+  letter-spacing: 0.48rem;
+}
+
+@include media-breakpoint-up(md) {
+  .letter-spacing-md-80{
+    letter-spacing: 80px;
+  }
+  .letter-spacing-md-48{
+    letter-spacing: 48px;
+  }
+  .letter-spacing-md-40{
+    letter-spacing: 40px;
+  }
+  .letter-spacing-md-32{
+    letter-spacing: 32px;
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  .letter-spacing-lg-48{
+    letter-spacing: 48px;
+  }
+  .letter-spacing-lg-40{
+    letter-spacing: 48px;
+  }
+  .letter-spacing-lg-32{
+    letter-spacing: 48px;
+  }
+}
+
