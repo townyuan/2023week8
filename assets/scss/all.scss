@@ -9,16 +9,17 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Add additional custom code here
-@import "./helpers/utilities";
+// custom
+// @import "./helpers/utilities";
 @import "./utils/bg-color";
 @import "./base/reset";
 @import "./base/font";
 @import "./utils/text";
 @import "./utils/swiper";
+// @import "./utils/aos";
 @import "./utils/animation";
 @import "./utils/card";
-@import "./utils/border-utilities";
+@import "./utils/border";
 
 
 @import "./layout/container";

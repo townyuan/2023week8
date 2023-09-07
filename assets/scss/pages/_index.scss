@@ -44,23 +44,19 @@
     margin-top: -96px;
   }
 }
-.mt-lg-n80{
-  margin-top: 16px;
-  @include media-breakpoint-up(lg){
-    margin-top: -80px;
-  }
-}
+
 
 .banner-img {
   background-image: url(../assets/images/carousel_background.png), radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%);
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: left;
-  padding-top: 136px;
   z-index: -5;
+  padding-top: 136px;
   margin-top: -136px;
-  height: 150%;
 
   @include media-breakpoint-up(lg){
+    background-size: contain;
     padding-top: 144px;
     margin-top: -144px;
   }
