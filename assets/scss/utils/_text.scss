@@ -3,13 +3,16 @@
     font-size: 400px !important;
   }
   .fs-md-96{
-    font-size: 64px !important;
+    font-size: 96px !important;
   }
   .fs-md-64{
     font-size: 64px !important;
   }
   .fs-md-48{
     font-size: 48px !important;
+  }
+  .fs-md-40{
+    font-size: 40px !important;
   }
   .fs-md-32{
     font-size: 32px !important;
@@ -58,6 +61,9 @@
   .letter-spacing-md-80{
     letter-spacing: 80px;
   }
+  .letter-spacing-md-64{
+    letter-spacing: 64px;
+  }
   .letter-spacing-md-48{
     letter-spacing: 48px;
   }
@@ -71,6 +77,12 @@
 
 
 @include media-breakpoint-up(lg) {
+  .letter-spacing-lg-96{
+    letter-spacing: 96px;
+  }
+  .letter-spacing-lg-64{
+    letter-spacing: 64px;
+  }
   .letter-spacing-lg-48{
     letter-spacing: 48px;
   }
@@ -79,6 +91,27 @@
   }
   .letter-spacing-lg-32{
     letter-spacing: 48px;
+  }
+}
+
+
+@include media-breakpoint-up(lg){
+  .fs-lg-64{
+    font-size: 64px !important;
+  }
+  .fs-lg-96{
+    font-size: 96px !important;
+  }
+  .letter-spacing-lg-40{
+    letter-spacing: 40px !important;
+  }
+}
+@include media-breakpoint-up(xxl){
+  .fs-xxl-96{
+    font-size: 96px !important;
+  }
+  .letter-spacing-xxl-96{
+    letter-spacing: 96px !important;
   }
 }
 

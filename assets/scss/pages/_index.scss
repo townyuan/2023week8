@@ -33,6 +33,7 @@
 }
 
 .main-img{
+  display: block;
   transition: ease .8s;
   &:hover {
     box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
