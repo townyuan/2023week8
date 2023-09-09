@@ -1420,14 +1420,14 @@ $card-group-margin:                 $grid-gutter-width * .5 !default;
 // Accordion
 
 // scss-docs-start accordion-variables
-$accordion-padding-y:                     1rem !default;
-$accordion-padding-x:                     1.25rem !default;
-$accordion-color:                         var(--#{$prefix}body-color) !default;
-$accordion-bg:                            var(--#{$prefix}body-bg) !default;
-$accordion-border-width:                  var(--#{$prefix}border-width) !default;
+$accordion-padding-y:                     0; //1rem !default; custom
+$accordion-padding-x:                     0; //1.25rem !default; custom
+$accordion-color:                         $primary-3; //var(--#{$prefix}body-color) !default; custom
+$accordion-bg:                            transparent; //var(--#{$prefix}body-bg) !default; custom
+$accordion-border-width:                  none; //var(--#{$prefix}border-width) !default; custom
 $accordion-border-color:                  var(--#{$prefix}border-color) !default;
 $accordion-border-radius:                 var(--#{$prefix}border-radius) !default;
-$accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width) !default;
+$accordion-inner-border-radius:           none; //subtract($accordion-border-radius, $accordion-border-width) !default; custom
 
 $accordion-body-padding-y:                $accordion-padding-y !default;
 $accordion-body-padding-x:                $accordion-padding-x !default;
@@ -1437,20 +1437,20 @@ $accordion-button-padding-x:              $accordion-padding-x !default;
 $accordion-button-color:                  var(--#{$prefix}body-color) !default;
 $accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              var(--#{$prefix}primary-bg-subtle) !default;
+$accordion-button-active-bg:              transparent; //var(--#{$prefix}primary-bg-subtle) !default; custom
 $accordion-button-active-color:           var(--#{$prefix}primary-text-emphasis) !default;
 
 $accordion-button-focus-border-color:     $input-focus-border-color !default;
-$accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
+$accordion-button-focus-box-shadow:       none; //$btn-focus-box-shadow !default; custom
 
-$accordion-icon-width:                    1.25rem !default;
+$accordion-icon-width:                    2.5rem; //1.25rem !default; custom
 $accordion-icon-color:                    $body-color !default;
 $accordion-icon-active-color:             $primary-text-emphasis !default;
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(-180deg) !default;
 
-$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
-$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-icon:         url("/assets/images/icons/add.svg") !default; //custom url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-active-icon:  url("/assets/images/icons/remove.svg") !default; //custom url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
 // scss-docs-end accordion-variables
 
 // Tooltips
@@ -1635,9 +1635,9 @@ $progress-bar-transition:           width .6s ease !default;
 
 // scss-docs-start list-group-variables
 $list-group-color:                  var(--#{$prefix}body-color) !default;
-$list-group-bg:                     var(--#{$prefix}body-bg) !default;
+$list-group-bg:                     $primary-4; //var(--#{$prefix}body-bg) !default; custom
 $list-group-border-color:           var(--#{$prefix}border-color) !default;
-$list-group-border-width:           var(--#{$prefix}border-width) !default;
+$list-group-border-width:           0; //var(--#{$prefix}border-width) !default;
 $list-group-border-radius:          var(--#{$prefix}border-radius) !default;
 
 $list-group-item-padding-y:         $spacer * .5 !default;
@@ -1647,9 +1647,9 @@ $list-group-item-bg-scale:          -80% !default; // Deprecated in v5.3.0
 $list-group-item-color-scale:       40% !default; // Deprecated in v5.3.0
 // fusv-enable
 
-$list-group-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
+$list-group-hover-bg:               none; //var(--#{$prefix}tertiary-bg) !default; custom
+$list-group-active-color:           $black; //$component-active-color !default; custom
+$list-group-active-bg:              none; // $component-active-bg !default; custom
 $list-group-active-border-color:    $list-group-active-bg !default;
 
 $list-group-disabled-color:         var(--#{$prefix}secondary-color) !default;
@@ -1659,7 +1659,7 @@ $list-group-action-color:           var(--#{$prefix}secondary-color) !default;
 $list-group-action-hover-color:     var(--#{$prefix}emphasis-color) !default;
 
 $list-group-action-active-color:    var(--#{$prefix}body-color) !default;
-$list-group-action-active-bg:       var(--#{$prefix}secondary-bg) !default;
+$list-group-action-active-bg:       none; //var(--#{$prefix}secondary-bg) !default; custom
 // scss-docs-end list-group-variables
 
 

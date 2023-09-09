@@ -1,0 +1,8 @@
+
+.list-group-item.active{
+  border-bottom: 1px solid $black;
+
+  @include media-breakpoint-up(md){
+    border-bottom: none !important;
+  }
+}

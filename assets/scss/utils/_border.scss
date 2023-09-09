@@ -2,6 +2,7 @@
 
 //
 // Border 可以設斷點方式，我怎麼沒有早點發現啊啊啊~~~~
+// 但 5.3 版更簡單啊啊啊…
 //
 
 @each $breakpoint in map-keys($grid-breakpoints) {
@@ -70,4 +71,15 @@
 
 .rounded-0 {
   border-radius: 0 !important;
+}
+
+
+.border-dotted{
+  border-bottom: 2px dotted $white;
+}
+
+.list-group.border-dotted{
+  @include media-breakpoint-up(md){
+    border-bottom: none;
+  }
 }
