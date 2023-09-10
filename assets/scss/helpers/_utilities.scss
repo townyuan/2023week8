@@ -135,6 +135,7 @@ $utilities: map-merge(
       )
     ),
     "border-top": (
+      responsive: true, //custom
       property: border-top,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -142,6 +143,7 @@ $utilities: map-merge(
       )
     ),
     "border-end": (
+      responsive: true, //custom
       property: border-right,
       class: border-end,
       values: (
@@ -150,6 +152,7 @@ $utilities: map-merge(
       )
     ),
     "border-bottom": (
+      responsive: true, //custom
       property: border-bottom,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -157,6 +160,7 @@ $utilities: map-merge(
       )
     ),
     "border-start": (
+      responsive: true, //custom
       property: border-left,
       class: border-start,
       values: (

@@ -50,6 +50,22 @@ const swiper1 = new Swiper('.sw2', {
   mousewheel: true, // 滑鼠滾動
 });
 
+// product
+const swiperProduct = new Swiper('.sw3', {
+  slidesPerView: "auto",
+  slidesPerView: 1,
+  spaceBetween: 10,
+  noSwiping: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true, //拖曳
+  },
+  mousewheel: true, // 滑鼠滾動
+});
 
 //AOS
 AOS.init();

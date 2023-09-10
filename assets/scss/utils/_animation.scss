@@ -11,3 +11,17 @@
   0% { rotate: 0deg; }
   100% { rotate: 360deg; }
 }
+
+.alphaboxCircle-s {
+  width: 109px;
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate {
+  0% { rotate: 0deg; }
+  100% { rotate: 360deg; }
+}
